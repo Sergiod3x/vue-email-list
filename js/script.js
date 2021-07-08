@@ -14,7 +14,7 @@ new Vue(
         methods: {
             mailFinish: function(){
                 if(mail.length==mailN ){
-                    return ture;
+                    return true;
                 }
             },
 
