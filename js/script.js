@@ -5,13 +5,18 @@ new Vue(
         el: '#app',
         data: {
             mail: [],
-            finish : false,
+            finish : true,
             mailN : 5,
         },
         created() {
             this.getMail(this.mailN);
         },
         methods: {
+            mailFinish: function(){
+                if(mail.length==mailN ){
+                    return false;
+                }
+            },
 
             getMail: function (n) {
                 for(let i = 0 ; i<n; i++){
